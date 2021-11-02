@@ -1,14 +1,24 @@
-import logo from "./logo.svg";
+import { useState } from "react";
+import Navbar from "./components/navbar/Navbar";
+import Intro from "./components/intro/Intro";
+import Project from "./components/project/Project";
+import AboutMe from "./components/aboutMe/AboutMe";
+import Menu from "./components/menu/Menu";
 import "./App.css";
 
-function App() {
+const App = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="App">
-      <h1>Hello Jayden's portfolio</h1>
-      <h1>Hello Jayden's portfolio</h1>
-      <h1>Hello Jayden's portfolio</h1>
+    <div className="app">
+      <Navbar open={menuOpen} setOpen={setMenuOpen} />
+      <Menu open={menuOpen} setOpen={setMenuOpen} />
+      <div className="sections">
+        <Intro />
+        <AboutMe />
+        <Project />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
