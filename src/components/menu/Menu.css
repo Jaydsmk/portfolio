@@ -16,7 +16,7 @@
   right: 0;
 }
 
-ul {
+.menu ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -25,15 +25,15 @@ ul {
   color: white;
   width: 60%;
 }
-ul > li {
+.menu ul li {
   margin-bottom: 45px;
 }
 
-a:hover {
+.menu ul li a:hover {
   font-weight: 600;
 }
 
-ul > li > a {
+.menu ul li a {
   font-size: inherit;
   color: inherit;
   text-decoration: none;

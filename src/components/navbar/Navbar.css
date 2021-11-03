@@ -13,21 +13,21 @@
   display: none;
 }
 
-.navBar > .wrapper {
+.navBar .wrapper {
   padding: 10px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.navBar > .wrapper > .left > .logo {
+.navBar .wrapper .left .logo {
   font-size: 40px;
   font-weight: 700;
   text-decoration: none;
   color: red;
 }
 
-.navBar > .wrapper > .right > .hamburger {
+.navBar .wrapper .right .hamburger {
   width: 32px;
   height: 25px;
   display: flex;
@@ -36,11 +36,11 @@
   cursor: pointer;
 }
 
-.navBar > .wrapper > .right > .hamburger::-webkit-scrollbar {
+.navBar .wrapper .right .hamburger::-webkit-scrollbar {
   display: none;
 }
 
-.navBar > .wrapper > .right > .hamburger > span {
+.navBar .wrapper .right .hamburger span {
   width: 100%;
   height: 3px;
   background-color: red;
@@ -52,25 +52,25 @@
   background-color: blue;
   color: white;
 }
-.active > .wrapper > .left > .logo {
+.active .wrapper .left .logo {
   font-size: 40px;
   font-weight: 700;
   text-decoration: none;
   color: white;
 }
 
-.active > .wrapper > .right > .hamburger > span:first-child {
+.active .wrapper .right .hamburger span:first-child {
   background-color: white;
   transform: rotate(45deg);
 }
-.active > .wrapper > .right > .hamburger > span:nth-child(2) {
+.active .wrapper .right .hamburger span:nth-child(2) {
   opacity: 0;
 }
-.active > .wrapper > .right > .hamburger > span:last-child {
+.active .wrapper .right .hamburger span:last-child {
   background-color: white;
   transform: rotate(-45deg);
 }
 
-.active > .wrapper > .right > .hamburger::-webkit-scrollbar {
+.active .wrapper .right .hamburger::-webkit-scrollbar {
   display: none;
 }

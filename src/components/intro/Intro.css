@@ -4,7 +4,7 @@
 }
 
 .intro .left {
-  flex: 0.5;
+  flex: 0.3;
   /* background-color: yellow; */
   overflow: hidden;
 }
@@ -26,7 +26,7 @@
 }
 
 .intro .right {
-  flex: 0.5;
+  flex: 0.7;
   /* background-color: red; */
   position: relative;
 }
@@ -34,7 +34,7 @@
 .intro .right .wrapper {
   width: 100%;
   height: 100%;
-  padding-left: 50px;
+  padding-left: 150px;
   display: flex;
   justify-content: center;
   flex-direction: column;
