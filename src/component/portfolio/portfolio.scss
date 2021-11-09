@@ -9,33 +9,48 @@
   h1 {
     font-size: 50px;
     // margin-top: 30px;
+
+    @include mobile {
+      font-size: 20px;
+    }
   }
 
   ul {
-    margin: 10px;
+    margin: 30px;
     padding: 0;
     list-style: none;
     display: flex;
 
-    li {
-      font-size: 14px;
-      margin-right: 50px;
-      padding: 7px;
-      border-radius: 10px;
-      cursor: pointer;
-
-      &.active {
-        background-color: $mainColor;
-        color: white;
-      }
+    @include mobile {
+      margin: 10px 0px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
+
+    // li {
+    //   font-size: 14px;
+    //   margin-right: 50px;
+    //   padding: 7px;
+    //   border-radius: 10px;
+    //   cursor: pointer;
+
+    //   &.active {
+    //     background-color: $mainColor;
+    //     color: white;
+    //   }
+    // }
   }
+
   .container {
     width: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+
+    @include mobile {
+      width: 100%;
+    }
 
     .item {
       width: 220px;
@@ -50,6 +65,11 @@
       position: relative;
       transition: all 0.7s ease;
       cursor: pointer;
+
+      @include mobile {
+        width: 130px;
+        height: 100px;
+      }
 
       h3 {
         position: absolute;

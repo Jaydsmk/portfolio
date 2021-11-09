@@ -1,3 +1,114 @@
+@import "../../global.scss";
+
 .contact {
-  background-color: lightblue;
+  background-color: white;
+  display: flex;
+  // .container {
+  //   width: 100vw;
+  // }
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .left {
+    flex: 1;
+    // background-color: lightblue;
+    overflow: hidden;
+    margin-left: 110px;
+    @include mobile {
+      margin-left: 70px;
+    }
+
+    img {
+      // margin-left: 100px;
+      // height: 200px;
+      width: 100%;
+      height: 40vh;
+      margin-top: 120px;
+
+      @include mobile {
+        width: 80%;
+        height: 20vh;
+        margin-top: 70px;
+      }
+    }
+  }
+
+  .right {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // margin-right: 200px;
+
+    @include mobile {
+      flex: 1.5;
+    }
+
+    h2 {
+      font-size: 30px;
+      @include mobile {
+        display: none;
+      }
+    }
+
+    form {
+      width: 70%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      @include mobile {
+        height: 90%;
+      }
+
+      input {
+        width: 300px;
+        height: 30px;
+        font-size: 14px;
+
+        @include mobile {
+          width: 200px;
+          height: 20px;
+        }
+      }
+
+      textarea {
+        width: 300px;
+        height: 200px;
+        font-size: 14px;
+
+        @include mobile {
+          width: 200px;
+          height: 100px;
+        }
+      }
+
+      button {
+        width: 150px;
+        height: 30px;
+        color: white;
+        background-color: crimson;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+        }
+        &:active {
+          transform: scale(0.98);
+        }
+      }
+
+      span {
+        color: green;
+      }
+    }
+  }
 }

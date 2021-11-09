@@ -42,7 +42,7 @@ export default function Intro() {
                 </div>
 
                 <a href="#portfolio">
-                    <img src={process.env.PUBLIC_URL + "/images/downArrow.png"} alt="downArrow" />
+                    <img src={process.env.PUBLIC_URL + "/images/arrow.png"} alt="downArrow" />
                 </a>
             </div>
         </div>
