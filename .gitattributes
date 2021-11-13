@@ -1,1 +1,2 @@
-
+documented_code.jsx linguist-documentation=true
+*.rb linguist-language=React
