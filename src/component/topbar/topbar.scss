@@ -70,8 +70,9 @@
   }
 
   &.active {
-    background-color: $mainColor;
+    background-color: #a4cce3;
     color: white;
+    outline: none;
 
     .hamburger {
       span {

@@ -29,12 +29,12 @@ export default function Intro() {
 
     return (
         <div className="intro" id="intro">
-            <div className="left">
-            <div className="imgContainer">
-                <img src={process.env.PUBLIC_URL + "/images/doggy.png"} alt="doggy" />
+            {/* <div className="right">
+                <div className="imgContainer">
+                    <img src={process.env.PUBLIC_URL + "/images/doggy.png"} alt="doggy" />
                 </div>
-                </div>
-            <div className="right">
+            </div> */}
+            <div className="textIntro">
                 <div className="wrapper">
                     <h2>Hi there, I'm</h2>
                     <h1>Jayden Kim</h1>
