@@ -9,7 +9,7 @@ export default function Works() {
         {
             id: 1,
             icon: process.env.PUBLIC_URL + "/images/web.png",
-            title: "Web Application",
+            title: "E-commerce",
             desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, aperiam.",
             img: process.env.PUBLIC_URL + "/images/rsz_binoo.png",
         },
@@ -47,10 +47,12 @@ export default function Works() {
                     <div className="container">
                     <div className="item">
                         <div className="left">
-                            <div className="leftContainer">
-                                <div className="imgContainer">
-                                    <img src={d.icon} alt="binoo" />
-                                </div>
+                                <div className="leftContainer">
+                                    <div className="imgs-container">
+                                        <div className="logContainer">
+                                            <img src={d.icon} alt="binoo" />
+                                        </div>
+                                    </div>
                                     <h2>{d.title}</h2>
                                     <p>{d.desc}</p>
                                 <span>Projects</span>
