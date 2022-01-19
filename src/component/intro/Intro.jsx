@@ -41,7 +41,7 @@ export default function Intro() {
                     <h3>&nbsp; <span ref={textRef}></span></h3>
                 </div>
 
-                <a href="#portfolio">
+                <a href="#works">
                     <img src={process.env.PUBLIC_URL + "/images/arrow.png"} alt="downArrow" />
                 </a>
             </div>
