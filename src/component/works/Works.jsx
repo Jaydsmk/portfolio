@@ -55,7 +55,7 @@ export default function Works() {
             ],
             title: "50 Projects",
             desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, magni!",
-            img: process.env.PUBLIC_URL + "/images/rsz_binoo.png",
+            img: process.env.PUBLIC_URL + "/images/50Projects.jpg",
         },
     ];
 
