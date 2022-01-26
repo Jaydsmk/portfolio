@@ -96,23 +96,31 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 0 10px 20px;
+          padding: 0 10px 30px;
           // margin-bottom: 10px;
 
           .leftContainer {
             width: 90%;
-            height: 70%;
+            height: 90%;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-around;
+            margin-top: 25px;
 
             @include mobile {
               width: 90%;
               height: 80%;
               padding: 0;
+              overflow: hidden;
             }
             .imgs-container {
               display: flex;
+              margin-bottom: 15px;
+
+              @include mobile {
+                overflow: hidden;
+                margin: 0;
+              }
 
               .logContainer {
                 width: 40px;
@@ -130,6 +138,7 @@
                 @include mobile {
                   width: 20px;
                   height: 20px;
+                  margin-bottom: 5px;
                 }
 
                 img {
@@ -144,25 +153,75 @@
             }
 
             h2 {
+              margin-top: 0px;
               font-size: 25px;
               color: $mainColor;
 
               @include mobile {
-                font-size: 15px;
+                margin: 15px 0 0px;
+                font-size: 17px;
+                overflow: hidden;
               }
             }
             p {
-              font-size: 13px;
+              margin-bottom: 5px;
+              font-size: 15px;
+              color: #277685;
+              letter-spacing: 0.3px;
+              padding-top: 10px;
 
               @include mobile {
                 display: none;
               }
             }
-            span {
-              font-size: 12px;
-              font-weight: 600;
-              text-decoration: underline;
-              cursor: pointer;
+
+            .btnContainer {
+              margin-top: 20px;
+              @include mobile {
+                overflow: hidden;
+                margin-top: 10px;
+              }
+
+              .linkBtn {
+                width: 32px;
+                height: 32px;
+                border: none;
+                background-color: rgb(189, 205, 219);
+                border-radius: 50%;
+                margin: 5px 3px;
+                cursor: pointer;
+                color: white;
+
+                &:hover {
+                  background-color: #f6f6f6;
+                  transform: scale(1.2);
+                }
+
+                &:focus {
+                  outline: none;
+                }
+
+                @include mobile {
+                  // margin-top: 10px;
+                  width: 25px;
+                  height: 25px;
+                  margin-top: 0px;
+                  overflow: hidden;
+                }
+
+                a img {
+                  // background-color: white;
+                  width: 18px;
+                  height: 18px;
+
+                  @include mobile {
+                    width: 12px;
+                    height: 12px;
+                    margin: 10px 0;
+                    overflow: hidden;
+                  }
+                }
+              }
             }
           }
         }
