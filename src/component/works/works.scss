@@ -7,6 +7,11 @@
   justify-content: center;
   position: relative;
 
+  @include mobile {
+    overflow: hidden;
+    position: relative;
+  }
+
   h1 {
     align-self: flex-start;
     font-size: 50px;
@@ -15,7 +20,8 @@
 
     @include mobile {
       font-size: 30px;
-      padding-top: 18px;
+      margin: 0;
+      padding-top: 15px;
     }
   }
 
@@ -55,9 +61,10 @@
     transition: all 0.8s ease-out;
 
     @include mobile {
-      height: 90vh;
+      height: 100vh;
       flex-direction: column;
       justify-content: center;
+      position: absolute;
       // overflow: hidden;
     }
 
