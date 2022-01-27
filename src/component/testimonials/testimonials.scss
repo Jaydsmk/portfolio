@@ -16,7 +16,10 @@
     color: #26474e;
 
     @include mobile {
-      font-size: 20px;
+      overflow: hidden;
+      font-size: 30px;
+      margin: 0;
+      padding-top: 15px;
     }
   }
 
@@ -44,7 +47,7 @@
       transition: all 1s ease;
 
       @include mobile {
-        height: 180px;
+        height: 150px;
         margin: 10px 0;
       }
 
@@ -87,6 +90,17 @@
             }
           }
         }
+
+        // a {
+        //   &img {
+        //     height: 50px;
+        //   }
+
+        //   @include mobile {
+        //     width: 30px;
+        //     height: 30px;
+        //   }
+        // }
       }
 
       .center {

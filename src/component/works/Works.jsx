@@ -119,10 +119,10 @@ export default function Works() {
                                     <div className="btnContainer">
                                         {d.links.map(link => (
                                             <button className="linkBtn">
-                                            <a href={link.address} target="_blank" rel="noopener noreferrer">
-                                                <img src={link.linkIcon} alt="myWebsite" />
-                                            </a>
-                                        </button>
+                                                <a href={link.address} target="_blank" rel="noopener noreferrer">
+                                                    <img src={link.linkIcon} alt="myWebsite" />
+                                                </a>
+                                            </button>
                                         ))}       
                                     </div>
 
