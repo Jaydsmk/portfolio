@@ -21,8 +21,8 @@ export default function Contact() {
                         <h2>Contact</h2>
                         <form onSubmit={handleSubmit}>
                             <input type="text" placeholder="Email" />
-                            <textarea placeholder="Message"></textarea>
-                            <button type="sumit">send</button>
+                            <textarea placeholder="Under construction..."></textarea>
+                            <button type="sumit" disabled>send</button>
                             {message && <span>Thanks, I'll reply ASAP :)</span>}
                         </form>
                 </div>

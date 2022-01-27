@@ -87,6 +87,11 @@
           width: 200px;
           height: 100px;
         }
+        &::placeholder {
+          padding: 50px;
+          color: red;
+          font-size: 20px;
+        }
       }
 
       button {
